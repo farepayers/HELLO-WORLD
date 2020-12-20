@@ -35,47 +35,4 @@
         border: 0;
       }
 
-      .explainer {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        pointer-events: none;
-        display: flex;
-        flex-direction: row;
-      }
 
-      .explainer__menubuttonplaceholder {
-        pointer-events: none;
-        width: 60px;
-        flex-shrink: 0;
-        flex-grow: 0;
-      }
-
-      .explainer__content {
-        width: 100%;
-        background: pink;
-        box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-        padding: 10px;
-        text-align: center;
-        pointer-events: auto;
-      }
-
-      .explainer__content * {
-        margin: 3px 0;
-      }
-    </style>
-  </head>
-  <body>
-    <iframe class='map' src="https://www.google.com/maps/d/embed?mid=1Lwc9AaNUBDV7blvIJV8TkA54aBVHIGzh"></iframe>
-    <section class='explainer'>
-      <div class='explainer__menubuttonplaceholder'>
-        <!-- Spacer to ensure the menu button is accessible -->
-      </div>
-      <div class='explainer__content'>
-        <h3>Fare Payers</h3>
-        <p>Click the menu button to the left to show and hide layers.   <a href='/about.html'>What is this map?</a></p>
-      </div>
-    </section>
-  </body>
-</html>
