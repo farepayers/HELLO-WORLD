@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <?php $bg = array('red', 'pink', 'green');$i = rand(0, count($bg)-1);$selectedBg = "$bg[$i]";?>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -41,7 +42,9 @@
       }
     </style>
   </head>
+  
   <body>
+   {background:url(<?php echo $selectedBg; ?>) no-repeat center center fixed;}
     <main class='article'>
       <h2>Fare Payers</h2>
       <a href='/'>&larr; Back to the Map</a>
